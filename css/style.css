@@ -71,12 +71,13 @@ header {
   margin: 0 0 0 77px;
 }
 
-.header__menu__list a {
+.header__menu__link {
   color: var(--brand-color2);
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__menu__list li {
@@ -121,8 +122,6 @@ header {
 .header__menu__link:hover,
 .header__menu__link:focus {
   color: var(--brand-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__menu__link:active {
@@ -135,12 +134,13 @@ header {
   margin-left: auto;
 }
 
-.header__contact li a {
+.header__contact__link {
   color: var(--brand-color2);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__contact li {
@@ -154,8 +154,6 @@ header {
 .header__contact__link:hover,
 .header__contact__link:focus {
   color: var(--blu-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__contact__link:active {
@@ -190,6 +188,7 @@ header {
   max-width: 170px;
   background: var(--blu-color);
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
   font-size: 16px;
   line-height: 1.19;
@@ -203,8 +202,6 @@ header {
 .main__header button:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main__header button:active {
@@ -352,6 +349,7 @@ header {
 .customers__link {
   border: 1px solid #8e8f99;
   border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 168px;
   height: 88px;
   display: flex;
@@ -361,24 +359,19 @@ header {
 
 .customers__link:hover,
 .customers__link:focus {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid var(--blu-color);
 }
 
 .customers-svg {
   fill: #8e8f99;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers__link:hover .customers-svg {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--blu-color);
 }
 
 .customers__link:hover .customers-svg {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--blu-color);
 }
 
@@ -425,17 +418,14 @@ footer {
   border: 0px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__social-media_link:hover {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #31d0aa;
 }
 
 .footer__social-media_link:focus {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #31d0aa;
 }
 /* Portfolio */
@@ -475,6 +465,10 @@ footer {
   color: var(--blu-color);
   cursor: pointer;
   padding: 8px 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio__buttons li {
@@ -492,8 +486,6 @@ footer {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--white-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio__buttons button:active {
@@ -524,6 +516,7 @@ footer {
 
 .portfolio__item {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0 24px 48px 0;
 }
 
@@ -535,8 +528,6 @@ footer {
 .portfolio__item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio__list h3 {
@@ -616,6 +607,7 @@ footer p {
 .is-hidden {
   opacity: 0;
   pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
