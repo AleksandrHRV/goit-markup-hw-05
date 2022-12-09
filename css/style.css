@@ -631,7 +631,7 @@ footer p {
   border: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg_modal_close {
@@ -641,6 +641,6 @@ footer p {
 .modal_close_btn:hover,
 .modal_close_btn:focus
 {
-  background: #E7E9FC;
+  border: 1px solid rgba(0, 0, 0, 0);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
